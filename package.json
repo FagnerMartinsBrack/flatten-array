@@ -1,0 +1,27 @@
+{
+  "name": "flatten-array",
+  "version": "1.0.0",
+  "description": "Recursively flattens an Array",
+  "main": "src/flatten-array.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FagnerMartinsBrack/flatten-array.git"
+  },
+  "keywords": [
+    "flatten",
+    "array"
+  ],
+  "author": "Fagner <github@fagnermartins.com> (https://github.com/FagnerMartinsBrack/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FagnerMartinsBrack/flatten-array/issues"
+  },
+  "homepage": "https://github.com/FagnerMartinsBrack/flatten-array#readme",
+  "devDependencies": {
+    "expect.js": "0.3.1",
+    "mocha": "2.4.5"
+  }
+}
