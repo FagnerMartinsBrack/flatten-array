@@ -1,18 +1,25 @@
 var flattenArray = function( input, result ) {
   var item;
   var result = result || [];
+
+  if ( !Array.isArray(input) ) {
+    return result;
+  }
+
   var inputLength = input ? input.length : 0;
-  var index = -1;
   if ( !inputLength ) {
     return result;
   }
+
+  var index = -1;
+
   while ( ++index < inputLength ) {
     item = input[ index ];
-    if ( item.length ) {
+    if ( Array.isArray(item) ) {
       flattenArray( item, result );
-    } else {
-      result.push( item );
+      continue;
     }
+    result.push( item );
   }
   return result;
 };

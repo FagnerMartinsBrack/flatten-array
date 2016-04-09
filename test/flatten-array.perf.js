@@ -10,7 +10,7 @@ describe("[PERF] flatten-array performance", function() {
     }).on("cycle", function( event ) {
       var executionsPerSecond = Math.floor( event.target.hz );
       console.log( "Executions per second: " + executionsPerSecond );
-      expect(executionsPerSecond).to.be.above(800000);
+      expect(executionsPerSecond).to.be.above(1500000);
     }).run();
   }).timeout(0);
 });
