@@ -9,4 +9,10 @@ describe("flatten-array", function() {
     expect(flattenArray("")).to.be.an(Array);
     expect(flattenArray(new Date())).be.an(Array);
   });
+  it("should shallow flatten an array", function() {
+    expect(flattenArray([1, [2, 3]])).to.be.eql([1, 2, 3]);
+  });
+  it("should deeply flatten an array", function() {
+    expect(flattenArray([1, [2, 3, [4, 5]]])).to.be.eql([1, 2, 3, 4, 5]);
+  });
 });
