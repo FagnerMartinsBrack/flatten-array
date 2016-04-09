@@ -1,7 +1,7 @@
 var flattenArray = function( input, result ) {
   var item;
   var result = result || [];
-  var inputLength = input.length || 0;
+  var inputLength = input ? input.length : 0;
   var index = -1;
   if ( !inputLength ) {
     return result;
