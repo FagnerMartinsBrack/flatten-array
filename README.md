@@ -12,7 +12,7 @@ $ npm install flatten-array --save
 
 Include the module in your desired file:
 
-```
+```javascript
 var flattenArray = require("flatten-array");
 ```
 
